@@ -31,7 +31,7 @@
     
     dispatch_async(dispatch_queue_create("queueForX", NULL), ^{
         for (int i = 25; i<3200; i++) {
-            NSLog(@"X is moving Gitted");
+            NSLog(@"X is moving Gitted on my Machine");
             dispatch_async(dispatch_get_main_queue(), ^{
             CGFloat x = i/10;
             CGPoint newCenterXChanged = CGPointMake(x, self.imageViewForBall.center.y);
@@ -43,7 +43,7 @@
     
     dispatch_async(dispatch_queue_create("queueForY", NULL), ^{
         for (int i = 25; i<3200; i++) {
-            NSLog(@"Y is moving Gitted");
+            NSLog(@"Y is moving Gitted on My Machine");
             dispatch_async(dispatch_get_main_queue(), ^{
                 CGFloat y = i/10;
                 CGPoint newCenterYChanged = CGPointMake(self.imageViewForBall.center.x ,y);
